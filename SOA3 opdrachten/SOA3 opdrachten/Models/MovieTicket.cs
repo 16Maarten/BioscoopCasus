@@ -1,4 +1,6 @@
-﻿namespace SOA3_opdrachten.Models;
+﻿using System.Text;
+
+namespace SOA3_opdrachten.Models;
 
 public class MovieTicket
 {
@@ -19,6 +21,11 @@ public class MovieTicket
 
     public override string ToString()
     {
-        return string.Empty;
+        StringBuilder sb = new StringBuilder();
+        sb.AppendLine("Row number: " +rowNr.ToString());
+        sb.AppendLine("Seat number: " + seatNr.ToString());
+        sb.AppendLine("Premium: " + isPremium.ToString());
+        sb.AppendLine(movieScreening.ToString());
+        return sb.ToString();
     }
 }

@@ -13,3 +13,18 @@ C:\Users\Mo\Documents\School\Jaar 3\3.3\Softwareontwerp en -architectuur 3\Biosc
 C:\Users\Mo\Documents\School\Jaar 3\3.3\Softwareontwerp en -architectuur 3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\SOA3 opdrachten.pdb
 C:\Users\Mo\Documents\School\Jaar 3\3.3\Softwareontwerp en -architectuur 3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\SOA3 opdrachten.genruntimeconfig.cache
 C:\Users\Mo\Documents\School\Jaar 3\3.3\Softwareontwerp en -architectuur 3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\ref\SOA3 opdrachten.dll
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\bin\Debug\net6.0\SOA3 opdrachten.exe
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\bin\Debug\net6.0\SOA3 opdrachten.deps.json
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\bin\Debug\net6.0\SOA3 opdrachten.runtimeconfig.json
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\bin\Debug\net6.0\SOA3 opdrachten.dll
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\bin\Debug\net6.0\SOA3 opdrachten.pdb
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\SOA3 opdrachten.csproj.AssemblyReference.cache
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\SOA3 opdrachten.GeneratedMSBuildEditorConfig.editorconfig
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\SOA3 opdrachten.AssemblyInfoInputs.cache
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\SOA3 opdrachten.AssemblyInfo.cs
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\SOA3 opdrachten.csproj.CoreCompileInputs.cache
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\SOA3 opdrachten.dll
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\refint\SOA3 opdrachten.dll
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\SOA3 opdrachten.pdb
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\SOA3 opdrachten.genruntimeconfig.cache
+C:\Avans\SOA3\BioscoopCasus\SOA3 opdrachten\SOA3 opdrachten\obj\Debug\net6.0\ref\SOA3 opdrachten.dll

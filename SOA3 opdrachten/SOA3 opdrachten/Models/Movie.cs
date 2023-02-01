@@ -1,4 +1,7 @@
-﻿namespace SOA3_opdrachten.Models;
+﻿using Microsoft.VisualBasic;
+using System.Text;
+
+namespace SOA3_opdrachten.Models;
 
 public class Movie
 {
@@ -12,6 +15,6 @@ public class Movie
 
     public override string ToString()
     {
-        return string.Empty;
+        return "Title: " + title;
     }
 }

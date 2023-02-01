@@ -1,4 +1,6 @@
-﻿namespace SOA3_opdrachten.Models;
+﻿using System.Text;
+
+namespace SOA3_opdrachten.Models;
 
 public class MovieScreening
 {
@@ -16,6 +18,10 @@ public class MovieScreening
 
     public override string ToString()
     {
-        return string.Empty;
+        StringBuilder sb = new StringBuilder();
+        sb.AppendLine("Date & time: " + dateAndTime.ToString());
+        sb.AppendLine("Price: " + pricePerSeat.ToString());
+        sb.AppendLine(movie.ToString());
+        return sb.ToString();
     }
 }

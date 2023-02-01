@@ -1,4 +1,8 @@
-﻿namespace SOA3_opdrachten.Models;
+﻿using System.Text;
+using System.Text.Json;
+using static System.Net.Mime.MediaTypeNames;
+
+namespace SOA3_opdrachten.Models;
 
 public class Order
 {
@@ -31,10 +35,22 @@ public class Order
 
     public void Export(TicketExportFormat exportFormat)
     {
-        // TO DO: Implementeer de exportfunctionaliteit in formaat .txt en .json.
-        // Gebruik File-klasse en StringBuilder-klasse om dit te doen.
-
-        throw new NotImplementedException();
+        StringBuilder sb = new StringBuilder();
+        if (exportFormat == TicketExportFormat.PLAINTEXT)
+        {
+            sb.AppendLine("Order number: " + orderNr.ToString());
+            sb.AppendLine("Student order: " + isStudentOrder.ToString());
+            sb.AppendLine();
+            foreach (var ticket in movieTickets) {
+                sb.AppendLine(ticket.ToString());
+            }
+            File.WriteAllText("/Avans/tickets.txt", sb.ToString());
+        }
+        if ( exportFormat == TicketExportFormat.JSON )
+        {
+            sb.AppendLine(JsonSerializer.Serialize(this));
+            File.WriteAllText("/Avans/order.json", sb.ToString());
+        }
     }
     public bool SecondTicketIsForFree()
     {
