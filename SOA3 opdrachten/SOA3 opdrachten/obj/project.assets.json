@@ -8,19 +8,19 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\176ma\\.nuget\\packages\\": {}
+    "C:\\Users\\Mo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\176ma\\source\\repos\\BioscoopCasus\\SOA3 opdrachten\\SOA3 opdrachten\\SOA3 opdrachten.csproj",
+      "projectUniqueName": "C:\\Users\\Mo\\Documents\\School\\Jaar 3\\3.3\\Softwareontwerp en -architectuur 3\\BioscoopCasus\\SOA3 opdrachten\\SOA3 opdrachten\\SOA3 opdrachten.csproj",
       "projectName": "SOA3 opdrachten",
-      "projectPath": "C:\\Users\\176ma\\source\\repos\\BioscoopCasus\\SOA3 opdrachten\\SOA3 opdrachten\\SOA3 opdrachten.csproj",
-      "packagesPath": "C:\\Users\\176ma\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\176ma\\source\\repos\\BioscoopCasus\\SOA3 opdrachten\\SOA3 opdrachten\\obj\\",
+      "projectPath": "C:\\Users\\Mo\\Documents\\School\\Jaar 3\\3.3\\Softwareontwerp en -architectuur 3\\BioscoopCasus\\SOA3 opdrachten\\SOA3 opdrachten\\SOA3 opdrachten.csproj",
+      "packagesPath": "C:\\Users\\Mo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mo\\Documents\\School\\Jaar 3\\3.3\\Softwareontwerp en -architectuur 3\\BioscoopCasus\\SOA3 opdrachten\\SOA3 opdrachten\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\176ma\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
