@@ -10,8 +10,6 @@ public class Movie
         this.title = title;
     }
 
-    //public void AddScreening(MovieScreening screening) => throw new NotImplementedException();
-
     public override string ToString()
     {
         return string.Empty;

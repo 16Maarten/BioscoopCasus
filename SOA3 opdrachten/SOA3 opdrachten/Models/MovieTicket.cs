@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SOA3_opdrachten.Models;
+﻿namespace SOA3_opdrachten.Models;
 
 public class MovieTicket
 {
@@ -20,8 +14,6 @@ public class MovieTicket
         this.isPremium = isPremiumReservation;
         this.movieScreening = movieScreening;
     }
-
-    //public bool IsPremiumTicket() => throw new NotImplementedException();
 
     public double GetPrice() => movieScreening.pricePerSeat;
 

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace SOA3_opdrachten.Models;
+﻿namespace SOA3_opdrachten.Models;
 
 public class Order
 {
@@ -18,15 +12,38 @@ public class Order
         this.isStudentOrder = isStudentOrder;
     }
 
-    //public int GetOrderNr() => throw new NotImplementedException();
-
     public double CalculatePrice()
     {
-        throw new NotImplementedException();
+        var calculatedPrice = 0.0;
+
+        if (SecondTicketIsForFree())
+        {
+            for (int i = 0; i < movieTickets.Count; i++) if (i == 0 || i % 2 == 0) calculatedPrice += TicketPriceAfterPremiumCheck(movieTickets[i]);
+        }
+        else
+        {
+            foreach (var ticket in movieTickets) calculatedPrice += TicketPriceAfterPremiumCheck(ticket);
+            if (movieTickets.Count >= 6) calculatedPrice = calculatedPrice * .9;
+        }
+
+        return calculatedPrice;
     }
 
     public void Export(TicketExportFormat exportFormat)
     {
+        // TO DO: Implementeer de exportfunctionaliteit in formaat .txt en .json.
+        // Gebruik File-klasse en StringBuilder-klasse om dit te doen.
+
         throw new NotImplementedException();
+    }
+    public bool SecondTicketIsForFree()
+    {
+        var movieScreeningDayOfWeek = movieTickets[0].movieScreening.dateAndTime.DayOfWeek;
+        return isStudentOrder || movieScreeningDayOfWeek == DayOfWeek.Monday || movieScreeningDayOfWeek == DayOfWeek.Tuesday || movieScreeningDayOfWeek == DayOfWeek.Wednesday || movieScreeningDayOfWeek == DayOfWeek.Thursday;
+    }
+
+    public double TicketPriceAfterPremiumCheck(MovieTicket movieTicket)
+    {
+        return movieTicket.GetPrice() + (movieTicket.isPremium ? (isStudentOrder ? 2 : 3) : 0);
     }
 }
