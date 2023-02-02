@@ -50,7 +50,7 @@ public class Order
 
             File.WriteAllText($"../../../Exports/{fileName}.text", sb.ToString());
         }
-        if ( exportFormat == TicketExportFormat.JSON )
+        if (exportFormat == TicketExportFormat.JSON)
         {
             JsonSerializerOptions options = new() { WriteIndented = true };
             sb.AppendLine(JsonSerializer.Serialize(this, options));
