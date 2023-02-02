@@ -1,7 +1,5 @@
 ﻿using System.Text;
 using System.Text.Json;
-using System.Xml;
-using static System.Net.Mime.MediaTypeNames;
 
 namespace SOA3_opdrachten.Models;
 

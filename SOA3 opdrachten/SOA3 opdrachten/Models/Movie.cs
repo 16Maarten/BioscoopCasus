@@ -1,7 +1,4 @@
-﻿using Microsoft.VisualBasic;
-using System.Text;
-
-namespace SOA3_opdrachten.Models;
+﻿namespace SOA3_opdrachten.Models;
 
 public class Movie
 {
