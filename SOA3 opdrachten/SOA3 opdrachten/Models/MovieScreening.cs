@@ -21,7 +21,7 @@ public class MovieScreening
         StringBuilder sb = new StringBuilder();
         sb.AppendLine("[MOVIE]");
         sb.AppendLine(movie.ToString());
-        sb.AppendLine($"Date & time: {dateAndTime.ToString()}");
+        sb.AppendLine($"Date & time: {dateAndTime.DayOfWeek} {dateAndTime.ToString()}");
         sb.AppendLine($"Price: {pricePerSeat.ToString()} euro");
         return sb.ToString();
     }
