@@ -27,7 +27,7 @@ public class MovieTicket
         sb.AppendLine($"Row number: {rowNr.ToString()}");
         sb.AppendLine($"Seat number: {seatNr.ToString()}");
         sb.AppendLine($"Premium: {(isPremium ? "Yes" : "No")}");
-        sb.Append("-------");
+        sb.Append("---------------------");
         return sb.ToString();
     }
 }
