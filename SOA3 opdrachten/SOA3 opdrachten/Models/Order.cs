@@ -44,12 +44,15 @@ public class Order
             foreach (var ticket in movieTickets) {
                 sb.AppendLine(ticket.ToString());
             }
+            sb.AppendLine($"\nTOTAL PRICE (after discounts): {CalculatePrice()} euro");
+
             File.WriteAllText($"../../../Exports/{fileName}.text", sb.ToString());
         }
         if ( exportFormat == TicketExportFormat.JSON )
         {
             JsonSerializerOptions options = new() { WriteIndented = true };
             sb.AppendLine(JsonSerializer.Serialize(this, options));
+
             File.WriteAllText($"../../../Exports/{fileName}.json", sb.ToString());
         }
     }

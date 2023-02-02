@@ -28,6 +28,3 @@ studentOrder.Export(TicketExportFormat.PLAINTEXT, "studentOrder");
 studentOrder.Export(TicketExportFormat.JSON, "studentOrder");
 nonStudentOrder.Export(TicketExportFormat.PLAINTEXT, "nonStudentOrder");
 nonStudentOrder.Export(TicketExportFormat.JSON, "nonStudentOrder");
-
-Console.WriteLine($"Student order: {studentOrder.CalculatePrice()}");
-Console.WriteLine($"Non-student order: {nonStudentOrder.CalculatePrice()}");
