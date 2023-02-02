@@ -46,7 +46,6 @@ public class Order
             foreach (var ticket in movieTickets) {
                 sb.AppendLine(ticket.ToString());
             }
-            sb.AppendLine("--------------------------------------------");
             File.WriteAllText($"../../../Exports/{fileName}.text", sb.ToString());
         }
         if ( exportFormat == TicketExportFormat.JSON )
