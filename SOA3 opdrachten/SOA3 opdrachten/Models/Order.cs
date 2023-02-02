@@ -1,5 +1,6 @@
 ﻿using System.Text;
 using System.Text.Json;
+using System.Xml;
 using static System.Net.Mime.MediaTypeNames;
 
 namespace SOA3_opdrachten.Models;
@@ -33,7 +34,7 @@ public class Order
         return calculatedPrice;
     }
 
-    public void Export(TicketExportFormat exportFormat)
+    public void Export(TicketExportFormat exportFormat, string fileName)
     {
         StringBuilder sb = new StringBuilder();
         if (exportFormat == TicketExportFormat.PLAINTEXT)
@@ -44,12 +45,13 @@ public class Order
             foreach (var ticket in movieTickets) {
                 sb.AppendLine(ticket.ToString());
             }
-            File.WriteAllText("/Avans/tickets.txt", sb.ToString());
+            File.WriteAllText($"../../../Exports/{fileName}.text", sb.ToString());
         }
         if ( exportFormat == TicketExportFormat.JSON )
         {
-            sb.AppendLine(JsonSerializer.Serialize(this));
-            File.WriteAllText("/Avans/order.json", sb.ToString());
+            JsonSerializerOptions options = new() { WriteIndented = true };
+            sb.AppendLine(JsonSerializer.Serialize(this, options));
+            File.WriteAllText($"../../../Exports/{fileName}.json", sb.ToString());
         }
     }
     public bool SecondTicketIsForFree()

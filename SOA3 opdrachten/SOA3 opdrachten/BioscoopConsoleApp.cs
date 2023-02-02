@@ -23,8 +23,11 @@ var studentOrder = new Order(1, true);
 studentOrder.movieTickets.AddRange(movieTicketsNonPremium);
 var nonStudentOrder = new Order(2, false);
 nonStudentOrder.movieTickets.AddRange(movieTicketsNonStudent);
-studentOrder.Export(TicketExportFormat.PLAINTEXT);
-nonStudentOrder.Export(TicketExportFormat.JSON);
+
+studentOrder.Export(TicketExportFormat.PLAINTEXT, "studentOrder");
+studentOrder.Export(TicketExportFormat.JSON, "studentOrder");
+nonStudentOrder.Export(TicketExportFormat.PLAINTEXT, "nonStudentOrder");
+nonStudentOrder.Export(TicketExportFormat.JSON, "nonStudentOrder");
 
 Console.WriteLine($"Student order: {studentOrder.CalculatePrice()}");
 Console.WriteLine($"Non-student order: {nonStudentOrder.CalculatePrice()}");
