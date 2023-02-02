@@ -41,10 +41,12 @@ public class Order
             sb.AppendLine($"Order number: {orderNr.ToString()}");
             sb.AppendLine($"Student order: {(isStudentOrder ? "Yes" : "No")}");
             sb.AppendLine("--------------------------------------------");
-            foreach (var ticket in movieTickets) {
+            foreach (var ticket in movieTickets)
+            {
+                sb.AppendLine($"------Ticket #{movieTickets.FindIndex(x => x == ticket) + 1}------");
                 sb.AppendLine(ticket.ToString());
             }
-            sb.AppendLine($"\nTOTAL PRICE (after discounts): {CalculatePrice()} euro");
+            sb.AppendLine($"\nTOTAL PRICE (after discount): {CalculatePrice()} euro");
 
             File.WriteAllText($"../../../Exports/{fileName}.text", sb.ToString());
         }
