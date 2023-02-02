@@ -39,9 +39,9 @@ public class Order
         StringBuilder sb = new StringBuilder();
         if (exportFormat == TicketExportFormat.PLAINTEXT)
         {
-            sb.AppendLine("Order number: " + orderNr.ToString());
-            sb.AppendLine("Student order: " + isStudentOrder.ToString());
-            sb.AppendLine();
+            sb.AppendLine($"Order number: {orderNr.ToString()}");
+            sb.AppendLine($"Student order: {(isStudentOrder ? "Yes" : "No")}");
+            sb.AppendLine("--------------------------------------------");
             foreach (var ticket in movieTickets) {
                 sb.AppendLine(ticket.ToString());
             }

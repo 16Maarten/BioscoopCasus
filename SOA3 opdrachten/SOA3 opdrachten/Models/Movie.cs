@@ -15,6 +15,6 @@ public class Movie
 
     public override string ToString()
     {
-        return "Title: " + title;
+        return $"Title: {title}";
     }
 }

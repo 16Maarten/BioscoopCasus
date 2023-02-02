@@ -22,10 +22,12 @@ public class MovieTicket
     public override string ToString()
     {
         StringBuilder sb = new StringBuilder();
-        sb.AppendLine("Row number: " +rowNr.ToString());
-        sb.AppendLine("Seat number: " + seatNr.ToString());
-        sb.AppendLine("Premium: " + isPremium.ToString());
         sb.AppendLine(movieScreening.ToString());
+        sb.AppendLine("[SEAT]");
+        sb.AppendLine($"Row number: {rowNr.ToString()}");
+        sb.AppendLine($"Seat number: {seatNr.ToString()}");
+        sb.AppendLine($"Premium: {(isPremium ? "Yes" : "No")}");
+        sb.Append("-------");
         return sb.ToString();
     }
 }

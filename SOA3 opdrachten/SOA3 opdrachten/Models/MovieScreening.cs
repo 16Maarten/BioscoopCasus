@@ -19,9 +19,10 @@ public class MovieScreening
     public override string ToString()
     {
         StringBuilder sb = new StringBuilder();
-        sb.AppendLine("Date & time: " + dateAndTime.ToString());
-        sb.AppendLine("Price: " + pricePerSeat.ToString());
+        sb.AppendLine("[MOVIE]");
         sb.AppendLine(movie.ToString());
+        sb.AppendLine($"Date & time: {dateAndTime.ToString()}");
+        sb.AppendLine($"Price: {pricePerSeat.ToString()} euro");
         return sb.ToString();
     }
 }

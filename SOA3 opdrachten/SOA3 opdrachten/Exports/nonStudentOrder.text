@@ -1,51 +1,63 @@
 Order number: 2
-Student order: False
+Student order: No
+--------------------------------------------
+[MOVIE]
+Title: Sharknado 2
+Date & time: 4-2-2023 00:00:00
+Price: 10 euro
 
+[SEAT]
 Row number: 1
 Seat number: 1
-Premium: True
-Date & time: 4-2-2023 00:00:00
-Price: 10
+Premium: Yes
+-------
+[MOVIE]
 Title: Sharknado 2
+Date & time: 4-2-2023 00:00:00
+Price: 10 euro
 
-
+[SEAT]
 Row number: 1
 Seat number: 2
-Premium: True
-Date & time: 4-2-2023 00:00:00
-Price: 10
+Premium: Yes
+-------
+[MOVIE]
 Title: Sharknado 2
+Date & time: 4-2-2023 00:00:00
+Price: 10 euro
 
-
+[SEAT]
 Row number: 1
 Seat number: 3
-Premium: True
-Date & time: 4-2-2023 00:00:00
-Price: 10
+Premium: Yes
+-------
+[MOVIE]
 Title: Sharknado 2
+Date & time: 4-2-2023 00:00:00
+Price: 10 euro
 
-
+[SEAT]
 Row number: 1
 Seat number: 4
-Premium: True
-Date & time: 4-2-2023 00:00:00
-Price: 10
+Premium: Yes
+-------
+[MOVIE]
 Title: Sharknado 2
+Date & time: 4-2-2023 00:00:00
+Price: 10 euro
 
-
+[SEAT]
 Row number: 1
 Seat number: 5
-Premium: False
-Date & time: 4-2-2023 00:00:00
-Price: 10
+Premium: No
+-------
+[MOVIE]
 Title: Sharknado 2
+Date & time: 4-2-2023 00:00:00
+Price: 10 euro
 
-
+[SEAT]
 Row number: 1
 Seat number: 6
-Premium: False
-Date & time: 4-2-2023 00:00:00
-Price: 10
-Title: Sharknado 2
-
-
+Premium: No
+-------
