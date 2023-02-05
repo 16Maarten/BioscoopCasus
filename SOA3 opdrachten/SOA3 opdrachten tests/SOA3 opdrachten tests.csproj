@@ -22,4 +22,8 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\SOA3 opdrachten\SOA3 opdrachten.csproj" />
+  </ItemGroup>
+
 </Project>

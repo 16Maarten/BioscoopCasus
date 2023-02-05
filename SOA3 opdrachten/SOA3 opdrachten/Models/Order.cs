@@ -19,16 +19,13 @@ public class Order
     {
         var calculatedPrice = 0.0;
 
-        if (SecondTicketIsForFree())
+        foreach (var ticket in movieTickets) calculatedPrice += TicketPriceAfterPremiumCheck(ticket);
+        if (movieTickets.Count > 1)
         {
-            for (int i = 0; i < movieTickets.Count; i++) if (i == 0 || i % 2 == 0) calculatedPrice += TicketPriceAfterPremiumCheck(movieTickets[i]);
+            if (SecondTicketIsForFree()) { calculatedPrice -= TicketPriceAfterPremiumCheck(movieTickets[1]); }
         }
-        else
-        {
-            foreach (var ticket in movieTickets) calculatedPrice += TicketPriceAfterPremiumCheck(ticket);
-            if (movieTickets.Count >= 6) calculatedPrice = calculatedPrice * .9;
-        }
-
+        if (!isStudentOrder && movieTickets.Count >= 6) { calculatedPrice = calculatedPrice * .9; }
+     
         return calculatedPrice;
     }
 
