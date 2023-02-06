@@ -61,7 +61,7 @@ public class Order
     public bool SecondTicketIsForFree()
     {
         var movieScreeningDayOfWeek = movieTickets[0].movieScreening.dateAndTime.DayOfWeek;
-        return isStudentOrder || movieScreeningDayOfWeek != DayOfWeek.Friday || movieScreeningDayOfWeek != DayOfWeek.Saturday || movieScreeningDayOfWeek != DayOfWeek.Sunday;
+        return isStudentOrder || (movieScreeningDayOfWeek != DayOfWeek.Friday && movieScreeningDayOfWeek != DayOfWeek.Saturday && movieScreeningDayOfWeek != DayOfWeek.Sunday);
     }
 
     public double TicketPriceAfterPremiumCheck(MovieTicket movieTicket)
