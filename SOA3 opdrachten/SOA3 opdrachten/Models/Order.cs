@@ -22,10 +22,14 @@ public class Order
         foreach (var ticket in movieTickets) calculatedPrice += TicketPriceAfterPremiumCheck(ticket);
         if (movieTickets.Count > 1)
         {
-            if (SecondTicketIsForFree()) { calculatedPrice -= TicketPriceAfterPremiumCheck(movieTickets[1]); }
+            for (int i = 0; i < movieTickets.Count; i++) if (i % 2 == 0) calculatedPrice += TicketPriceAfterPremiumCheck(movieTickets[i]);
         }
-        if (!isStudentOrder && movieTickets.Count >= 6) { calculatedPrice = calculatedPrice * .9; }
-     
+        else
+        {
+            foreach (var ticket in movieTickets) calculatedPrice += TicketPriceAfterPremiumCheck(ticket);
+            if (movieTickets.Count >= 6) calculatedPrice *= .9;
+        }
+
         return calculatedPrice;
     }
 
@@ -58,7 +62,7 @@ public class Order
     public bool SecondTicketIsForFree()
     {
         var movieScreeningDayOfWeek = movieTickets[0].movieScreening.dateAndTime.DayOfWeek;
-        return isStudentOrder || movieScreeningDayOfWeek == DayOfWeek.Monday || movieScreeningDayOfWeek == DayOfWeek.Tuesday || movieScreeningDayOfWeek == DayOfWeek.Wednesday || movieScreeningDayOfWeek == DayOfWeek.Thursday;
+        return isStudentOrder || (movieScreeningDayOfWeek != DayOfWeek.Friday && movieScreeningDayOfWeek != DayOfWeek.Saturday && movieScreeningDayOfWeek != DayOfWeek.Sunday);
     }
 
     public double TicketPriceAfterPremiumCheck(MovieTicket movieTicket)
