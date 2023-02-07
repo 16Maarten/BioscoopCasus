@@ -28,3 +28,6 @@ studentOrder.Export(TicketExportFormat.PLAINTEXT, "studentOrder");
 studentOrder.Export(TicketExportFormat.JSON, "studentOrder");
 nonStudentOrder.Export(TicketExportFormat.PLAINTEXT, "nonStudentOrder");
 nonStudentOrder.Export(TicketExportFormat.JSON, "nonStudentOrder");
+
+Console.WriteLine(0 % 2);
+Console.WriteLine(1 % 2);
